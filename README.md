@@ -17,16 +17,16 @@
 
 ### React 방식 -
 
-    6. Import React
-    7. Script에서 요소 생성
-    8. 데이터를 업데이트, 반영
+    1. Import React
+    2. Script에서 요소 생성
+    3. 데이터를 업데이트, 반영
 
 ### React의 규칙 -
 
-    9. HTML을 페이지에 직접 작성하지 않는다. 대신 JavaScript code로 대신해서 만든다.
-    10. React.createElement("[태그]" , {id : "아이디"...(properties)} , "[content]") 으로 element를 생성한다.
+    1. HTML을 페이지에 직접 작성하지 않는다. 대신 JavaScript code로 대신해서 만든다.
+    2. React.createElement("[태그]" , {id : "아이디"...(properties)} , "[content]") 으로 element를 생성한다.
         생성하고자 하는 HTML 태그와 같아야 한다.
-    11. ReactDOM.render([렌더링 할 객체], [표시할 요소가 정의된 객체]); 로 렌더링한다.
+    3. ReactDOM.render([렌더링 할 객체], [표시할 요소가 정의된 객체]); 로 렌더링한다.
 
 ### React의 특장점 -
 
