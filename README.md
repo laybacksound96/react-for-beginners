@@ -38,20 +38,20 @@
 
 # 기존 React의 요소생성방식 -
 
-    ```
-    const h3 = React.createElement(
-        "h3",
-        { id: "sexy-span", onMouseEnter: () => console.log("mouseEnter") },
-        "hello, i'm a span"
-    );
-    ```
+```JAVASCRIPT
+const h3 = React.createElement(
+    "h3",
+    { id: "sexy-span", onMouseEnter: () => console.log("mouseEnter") },
+    "hello, i'm a span"
+);
+```
 
 # JSX의 요소생성방식 -
 
-    ```
-    const title = (
-        <h3 id="btn" onMouseEnter={() => console.log("mouseEnter")}>
-        Hello i'm a title
-        </h3>
-    );
-    ```
+```JAVASCRIPT
+const title = (
+    <h3 id="btn" onMouseEnter={() => console.log("mouseEnter")}>
+    Hello i'm a title
+    </h3>
+);
+```
