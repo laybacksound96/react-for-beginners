@@ -5,13 +5,22 @@
   </body>
   <script src="http://unpkg.com/react@latest/umd/react.production.min.js"></script>
   <script src="http://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
-  <script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
     const root = document.getElementById("root");
+    function title()
+    return (
+      <h3 id="btn" onMouseEnter={() => console.log("mouseEnter")}>
+        Hello i'm a title
+      </h3>
+    );
+    /*
     const h3 = React.createElement(
       "h3",
       { id: "sexy-span", onMouseEnter: () => console.log("mouseEnter") },
       "hello, i'm a span"
     );
+    */
     const button = React.createElement(
       "button",
       {
@@ -19,7 +28,17 @@
       },
       "Click Me"
     );
-    const container = React.createElement("div", null, [h3, button]);
-    ReactDOM.render(container, root);
+
+    const btn=()=>(
+      <button
+        onClick={() =>
+          console.log("i'm clicked")
+        }
+      >
+        Click Me
+      </button>
+    );
+    const Container = <div>title button</div>;
+    ReactDOM.render(Container, root);
   </script>
 </html>
