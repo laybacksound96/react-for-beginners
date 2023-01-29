@@ -59,3 +59,15 @@ const title = (
 ### JSX의 장점 -
 
     마크다운 문법과 유사하게 코드를 작성할 수 있음
+
+### State의 이해 -
+
+    컴포넌트 내부의 변경가능한 데이터를 관리할 때 쓴다.
+    데이터가 변경되었을때, 변경된 데이터만 렌더링 된다는 것이 특징이다.
+    React.useState()를 사용하여 state를 관리하며, 함수가 호출되면 자동으로 리렌더링을 해준다.
+
+```JAVASCRIPT
+
+    const [data,function] = React.useState(initial_value)
+    // ... [data,function(f)]...
+```
