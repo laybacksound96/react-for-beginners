@@ -7,8 +7,28 @@
   <script src="http://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
+    function Btn({ value }) {
+      return (
+        <button
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: 10,
+          }}
+        >
+          {value}
+        </button>
+      );
+    }
     function App() {
-      return <div></div>;
+      return (
+        <div>
+          <Btn value="A" />
+          <Btn value="B" />
+        </div>
+      );
     }
     const root = document.getElementById("root");
     ReactDOM.render(<App />, root);
