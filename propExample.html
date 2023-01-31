@@ -5,6 +5,7 @@
   </body>
   <script src="http://unpkg.com/react@latest/umd/react.development.js"></script>
   <script src="http://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/prop-types@latest/prop-types.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
     function Btn({ value }) {
@@ -22,10 +23,14 @@
         </button>
       );
     }
+    Btn.propTypes = {
+      value: PropTypes.string,
+      fontsize: PropTypes.number,
+    };
     function App() {
       return (
         <div>
-          <Btn value="A" />
+          <Btn value={12} />
           <Btn value="B" />
         </div>
       );
